@@ -2,6 +2,8 @@ package application.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import javax.servlet.Filter;
+
 /**
  * Created by ud on 8/4/17.
  */
@@ -19,5 +21,11 @@ public class AppMain extends AbstractAnnotationConfigDispatcherServletInitialize
     @Override
     protected String[] getServletMappings() {
         return new String[] { "/" };
+    }
+
+    @Override
+    protected Filter[] getServletFilters() {
+        Filter[] singleton = { new CorsSupport()};
+        return singleton;
     }
 }
