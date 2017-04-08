@@ -1,4 +1,4 @@
-package services;
+package application.services;
 
 /**
  * Created by ud on 8/4/17.
@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
- import model.User;
+ import application.model.User;
  import org.springframework.stereotype.Service;
  import org.springframework.transaction.annotation.Transactional;
 

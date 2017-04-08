@@ -1,11 +1,11 @@
-package services;
+package application.services;
 
 /**
  * Created by ud on 8/4/17.
  */
 
 
-import model.User;
+import application.model.User;
 
 import java.util.List;
 

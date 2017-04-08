@@ -1,4 +1,4 @@
-package model;
+package application.model;
 
 /**
  * Created by ud on 8/4/17.
